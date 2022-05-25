@@ -6,6 +6,7 @@ $password = "";
 //test1
 //this is a test from admin1
 //this is a test from admin2
+//okay
 
 $db_name = "lms_db";
 
