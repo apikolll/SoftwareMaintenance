@@ -4,6 +4,7 @@ $uname = "root";
 $password = "";
 
 //test1
+//test
 
 $db_name = "lms_db";
 
