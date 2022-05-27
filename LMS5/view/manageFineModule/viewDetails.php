@@ -79,6 +79,22 @@
 	  background-color: #ffd600;
 	  color: black;
 	}
+	 #bluelinks:link, #bluelinks:visited 
+	{
+	  background-color:#A74AC7;
+	  color: white;
+	  padding: 6px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	}
+
+	#bluelinks:hover, #bluelinks:active 
+	{
+	  background-color: #ffd600;
+	  color: black;
+	}
 	
   </style>
 
@@ -146,6 +162,7 @@
 						<td style="background-color:#00aea6; color: white;"><b>Borrowed Date</b></td>
 						<td style="background-color:#00aea6; color: white;"><b>Return Date</b></td>
 						<td style="background-color:#ff0000; color:white"><b>Delete</b></td>
+						<td style="background-color:#571B7E; color:white"><b>Edit</b></td>
 					  </tr>
 					  
 					
@@ -168,7 +185,7 @@
 							<td><?php echo $borrowed_date ?></td>
 							<td><?php echo $return_date ?></td>
 							<td><a id="redlinks" onclick="delete()" href="deleteForm.php?Delete=<?php echo $id ?>"><b>Delete</b></a></td>
-
+							<td><a id="bluelinks" onclick="editBorrow.php" > <b>Edit</b></a></td>
 						</tr>
 					  <?php
 						}
