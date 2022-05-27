@@ -117,42 +117,42 @@
 						<table>
 							<tr>
 								<th>ISBN</th>
-								<td><input type="text" id="ISBN" name="ISBN" placeholder="ISBN"></td>
+								<td><input required type="text" id="ISBN" name="ISBN" placeholder="ISBN"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Title</th>
-								<td><input type="text" id="Book_title" name="Book_title" placeholder="Book Title"></td>
+								<td><input required type="text" id="Book_title" name="Book_title" placeholder="Book Title"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Author</th>
-								<td><input type="text" id="Book_author" name="Book_author" placeholder="Book Author"></td>
+								<td><input required type="text" id="Book_author" name="Book_author" placeholder="Book Author"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Description</th>
-								<td><input type="text" id="Book_desc" name="Book_desc" placeholder="Book Description"></td>
+								<td><input required type="text" id="Book_desc" name="Book_desc" placeholder="Book Description"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Publication Date</th>
-								<td><input type="date" id="publication_date" name="publication_date" placeholder="Publication Date"></td>
+								<td><input required type="date" id="publication_date" name="publication_date" placeholder="Publication Date"></td>
 							</tr>
 							
 							<tr>
 								<th>Number of Pages</th>
-								<td><input type=number id="totalPages" name="totalPages" placeholder="Number of Pages"></td>
+								<td><input required type=number id="totalPages" name="totalPages" placeholder="Number of Pages"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Rating</th>
-								<td><input type=number id="Book_rating" name="Book_rating" placeholder="Book Rating"></td>
+								<td><input required type=number id="Book_rating" name="Book_rating" placeholder="Book Rating"></td>
 							</tr>
 						</table><br>
 						
 						<input type="button" value="Back" onclick="location.href='./manage_book_record.php'">
-						<input type="submit" value="Submit" name="Confirm" onclick="addBook()">
+						<input type="submit" value="Submit" name="Confirm">
 						<input type="reset" value="Reset">
 					</center>
 				</form>
@@ -202,7 +202,7 @@
   <script src="assets/js/main.js"></script>
   
   <!-- Add Book Confirmation -->
-  <script>
+  <!--<script>
   function addBook()
   {
 	if (confirm("Please confirm that all the details of the book is correct"))
@@ -214,7 +214,7 @@
 		alert("Cancelled");
 	}
   }
-  </script>
+  </script>-->
 
 </body>
 
