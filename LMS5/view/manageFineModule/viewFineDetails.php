@@ -79,6 +79,22 @@
 	  background-color: #ffd600;
 	  color: black;
 	}
+	#bluelinks:link, #bluelinks:visited 
+	{
+	  background-color:#A74AC7;
+	  color: white;
+	  padding: 6px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	}
+
+	#bluelinks:hover, #bluelinks:active 
+	{
+	  background-color: #ffd600;
+	  color: black;
+	}
 	
   </style>
 
@@ -145,6 +161,7 @@
 						<td style="background-color:#00aea6; color: white;"><b>Fine per day (RM)</b></td>
 						<td style="background-color:#00aea6; color: white;"><b>Total Fine Amount (RM)</b></td>
 						<td style="background-color:#ff0000; color:white"><b>Delete</b></td>
+						<td style="background-color:#571B7E; color:white"><b>Edit</b></td>
 					  </tr>
 					  
 					
@@ -165,7 +182,7 @@
 							<td><?php echo $fine ?></td>
 							<td><?php echo $total ?></td>
 							<td><a id="redlinks" onclick="delete()" href="deleteFineForm.php?Delete=<?php echo $id ?>"><b>Delete</b></a></td>
-
+							<td><a id="bluelinks" onclick="editFine.php"> <b>Edit</b></a></td>
 						</tr>
 					  <?php
 						}
