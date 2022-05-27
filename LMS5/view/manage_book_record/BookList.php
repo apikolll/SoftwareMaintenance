@@ -6,8 +6,7 @@
 		die(" Connection Error "); 
 	}
 	
-	$query = "SELECT * FROM book
-				LIMIT 8";
+	$query = "SELECT * FROM book";
 	
 	$result = mysqli_query($conn, $query);
 ?>
@@ -41,6 +40,13 @@
   <link href="assets/css/style.css" rel="stylesheet">
   
   <style>
+	  table
+    	{
+		overflow-y:scroll;
+		height:500px;
+		display:block;
+    	}
+
 	input[type=text] 
 	{
 	  width: 100%;
