@@ -177,7 +177,7 @@
 						</table><br>
 						
 						<input type="button" value="Back" onclick="location.href='./BookList.php'">
-						<input type="submit" name="Update" value="Update" onclick="updateBook()">
+						<input type="submit" name="Update" value="Update" onclick="return updateBook()">
 					</center>
 				</form>
               </div>
@@ -229,14 +229,7 @@
   <script>
   function updateBook()
   {
-	if (confirm("Please confirm all the details of the book is correct"))
-	{
-		alert("The book was successfully updated");
-	}
-	else
-	{
-		alert("Cancelled");
-	}
+	return confirm("Please confirm all the details of the book is correct");
   }
   </script>
 
