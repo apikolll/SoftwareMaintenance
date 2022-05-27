@@ -142,37 +142,37 @@
 						<table>
 							<tr>
 								<th>ISBN</th>
-								<td><input type="text" id="ISBN" name="ISBN" value="<?php echo $ISBN ?>" disabled></td>
+								<td><input required type="text" id="ISBN" name="ISBN" value="<?php echo $ISBN ?>" disabled></td>
 							</tr>
 							
 							<tr>
 								<th>Book Title</th>
-								<td><input type="text" id="Book_title" name="Book_title" value="<?php echo $Book_title ?>"></td>
+								<td><input required type="text" id="Book_title" name="Book_title" value="<?php echo $Book_title ?>"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Author</th>
-								<td><input type="text" id="Book_author" name="Book_author" value="<?php echo $Book_author ?>"></td>
+								<td><input required type="text" id="Book_author" name="Book_author" value="<?php echo $Book_author ?>"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Description</th>
-								<td><input type="text" id="Book_desc" name="Book_desc" value="<?php echo $Book_desc ?>"></td>
+								<td><input required type="text" id="Book_desc" name="Book_desc" value="<?php echo $Book_desc ?>"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Publication Date</th>
-								<td><input type="date" id="publication_date" name="publication_date" value="<?php echo $publication_date ?>"></td>
+								<td><input required type="date" id="publication_date" name="publication_date" value="<?php echo $publication_date ?>"></td>
 							</tr>
 							
 							<tr>
 								<th>Number of Pages</th>
-								<td><input type=number id="totalPages" name="totalPages" value="<?php echo $totalPages ?>"></td>
+								<td><input required type=number id="totalPages" name="totalPages" value="<?php echo $totalPages ?>"></td>
 							</tr>
 							
 							<tr>
 								<th>Book Rating</th>
-								<td><input type=number id="Book_rating" name="Book_rating" value="<?php echo $Book_rating ?>"></td>
+								<td><input required type=number id="Book_rating" name="Book_rating" value="<?php echo $Book_rating ?>"></td>
 							</tr>
 						</table><br>
 						
