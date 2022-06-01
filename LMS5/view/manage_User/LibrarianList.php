@@ -189,6 +189,8 @@
 							<td><?php echo $name ?></td>
 							<td><?php echo $phoneNum ?></td>
 							<td><?php echo $Email ?></td>
+							<td><a id="greenlinks" href="UpdateLibrarian.php?GetLibrarian=<?php echo $librarian_ID ?>">Update</a></td>
+                            <td><a id="redlinks" onclick="DeleteLibrarian()" href="DeleteLibrarianController.php?DeleteLibrarian=<?php echo $Librarian_ID ?>">Delete</a></td>
 							<td><a id="greenlinks" href="LibrarianListDetails.php?GetLibrarian=<?php echo $librarianID ?>">View Details</a></td>
 						</tr>
 					  <?php
