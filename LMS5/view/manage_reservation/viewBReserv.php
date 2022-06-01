@@ -86,10 +86,18 @@
           <div class="carousel-item active" style="background-image: url(assets/img/book/book1.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <h3 style="color:white;" class="animate__animated animate__fadeInDown">Manage Book Reservation</h3>
+                <h3 style="color:white;" class="animate_animated animate_fadeInDown">Manage Book Reservation</h3>
                 <div class="container1">
                     <div class="box">
                     <h9 style="color:white;" class="display-4 text-center">View List of Book Reservation</h9>
+
+                    <!-- changes are made here -->
+
+                    <form action="search.php" method="post">
+                     Search <input type="text" name="search"><br>
+                      <input type ="submit">
+                    </form>
+                    
 
                     <?php if (isset($_GET['success'])) { ?>
                     <div class="alert alert-success" role="alert">
@@ -114,10 +122,9 @@
                     <?php
                     $n = 0;
                     while($rows = mysqli_fetch_assoc($result)){
-                        $n++;
                     ?>
                         <tr>
-                        <th scope="row"><?=$n?></th>
+                        <td><?=$rows['BookReservID']?></td>
                         <td><?=$rows['BorrowerName']?></td>
                         <td><?php echo $rows['ISBN']; ?></td>
                         <td><?php echo $rows['BookName']; ?></td>
