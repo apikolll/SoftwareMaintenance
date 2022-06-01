@@ -6,8 +6,7 @@
 		die(" Connection Error "); 
 	}
 	
-	$query = "SELECT * FROM book
-				LIMIT 8";
+	$query = "SELECT * FROM book";
 	
 	$result = mysqli_query($conn, $query);
 ?>
@@ -41,6 +40,13 @@
   <link href="assets/css/style.css" rel="stylesheet">
   
   <style>
+	  table
+    	{
+		overflow-y:scroll;
+		height:500px;
+		display:block;
+    	}
+
 	input[type=text] 
 	{
 	  width: 100%;
@@ -210,7 +216,7 @@
 							<td><?php echo $totalPages ?></td>
 							<td><?php echo $Book_rating ?></td>
 							<td><a id="greenlinks" href="updateBook.php?GetBook=<?php echo $ISBN ?>">Edit</a></td>
-                            <td><a id="redlinks" onclick="deleteBook()" href="deleteBookForm.php?DeleteBook=<?php echo $ISBN ?>">Delete</a></td>
+                            <td><a id="redlinks" onclick="return deleteBook()" href="deleteBookForm.php?DeleteBook=<?php echo $ISBN ?>">Delete</a></td>
 						</tr>
 					  <?php
 						}
@@ -271,14 +277,7 @@
   <script>
   function deleteBook()
   {
-	if (confirm("All details of the book will be deleted\nAre you sure you want to delete this book?"))
-	{
-		alert("The book has been deleted");
-	}
-	else
-	{
-		alert("Cancelled");
-	}
+	return confirm("All details of the book will be deleted\nAre you sure you want to delete this book?");
   }
   
   </script>
