@@ -7,6 +7,7 @@ $password = "";
 //this is a test from admin1
 //this is a test from admin2
 //okay
+//testfromvscode
 
 $db_name = "lms_db";
 
