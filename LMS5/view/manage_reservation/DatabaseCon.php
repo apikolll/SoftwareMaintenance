@@ -3,6 +3,7 @@ $sname = "localhost";
 $uname = "root";
 $password = "";
 
+//hello
 
 $db_name = "lms_db";
 
