@@ -107,8 +107,6 @@
                         <th scope="col">Book Name</th>
                         <th scope="col">Borrow Date</th>
                         <th scope="col">Return Date</th>
-                        <th scope="col">Late Return Day</th>
-                        <th scope="col">Return Status</th>
                         <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -125,8 +123,6 @@
                         <td><?php echo $rows['BookName']; ?></td>
                         <td><?php echo $rows['BorrowDate']; ?></td>
                         <td><?php echo $rows['ReturnDate']; ?></td>
-                        <td><?php echo $rows['LateReturnDay']; ?></td>
-                        <td><?php echo $rows['ReturnStatus']; ?></td>
 
                         <td><a href="EditReturn.php?ReturnBookID=<?=$rows['ReturnBookID']?>" 
                               class="btn btn-success">Edit</a>

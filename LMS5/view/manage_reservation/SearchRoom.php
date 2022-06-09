@@ -1,11 +1,11 @@
-<?php include "controller/Search.php" ?>
+<?php include "controller/SearchRoom.php" ?>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Manage Book Reservation</title>
+  <title>Manage Room Reservation</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -86,36 +86,36 @@
           <div class="carousel-item active" style="background-image: url(assets/img/book/book1.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <h3 style="color:white;" class="animate__animated animate__fadeInDown">Manage Book Reservation</h3>
+                <h3 style="color: white;" class="animate__animated animate__fadeInDown">Manage Room Reservation</h3>
                 <div class="container1">
                     <div class="box">
-                    <h9 style="color:white;" class="display-4 text-center">View List of Book Reservation</h9>
+                    <h9 style="color: white;" class="display-4 text-center">View List of Room Reservation</h9>
 
-                    <!-- changes are made here -->
+                    <!---changes are made here --->
 
-                    <form action="search.php" method="post">
-                     Search <input type="text" name="search"><br>
-                      <input type ="submit">
+                    <div class="afiq">
+                     <form action="SearchRoom.php" method="post">
+                     Search <input id="rad" type="text" name="searchroom">
+                      <input type="submit">
                     </form>
+                    </div>
                     
-
                     <?php if (isset($_GET['success'])) { ?>
                     <div class="alert alert-success" role="alert">
                         <?php echo $_GET['success']; ?>
                     </div>
                     <?php }?>
 
-                    <?php
-					if (mysqli_num_rows($result)){?>
+                    <?php if (mysqli_num_rows($result)){?>
                     <table class="table table-striped">
                     <thead>
                         <tr>
-                        <th scope="col">Book Reservation ID</th>
+                        <th scope="col">Room Reservation ID</th>
                         <th scope="col">Borrower Name</th>
-                        <th scope="col">ISBN</th>
-                        <th scope="col">Book Name</th>
-                        <th scope="col">Borrow Date</th>
-                        <th scope="col">Return Date</th>
+                        <th scope="col">Room ID</th>
+                        <th scope="col">Room Name</th>
+                        <th scope="col">Room Details</th>
+                        <th scope="col">Reservation Datee</th>
                         <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -126,16 +126,16 @@
                         $n++;
                     ?>
                         <tr>
-						<td><?=$rows['BookReservID']?></td>
+                        <th scope="row"><?=$n?></th>
                         <td><?=$rows['BorrowerName']?></td>
-                        <td><?php echo $rows['ISBN']; ?></td>
-                        <td><?php echo $rows['BookName']; ?></td>
-                        <td><?php echo $rows['BorrowDate']; ?></td>
-                        <td><?php echo $rows['ReturnDate']; ?></td>
-                        <td><a href="EditBReserv.php?BookReservID=<?=$rows['BookReservID']?>" 
+                        <td><?php echo $rows['RoomID']; ?></td>
+                        <td><?php echo $rows['RoomName']; ?></td>
+                        <td><?php echo $rows['RoomDetails']; ?></td>
+                        <td><?php echo $rows['reservDate']; ?></td>
+                        <td><a href="EditRReserv.php?RoomReservID=<?=$rows['RoomReservID']?>" 
                               class="btn btn-success">Edit</a>
 
-                            <a href="controller/deleteBReserv.php?BookReservID=<?=$rows['BookReservID']?>" 
+                            <a href="controller/deleteRReserv.php?RoomReservID=<?=$rows['RoomReservID']?>" 
                               class="btn btn-danger">Delete</a></td>
                         </tr>
                     <?php  }?>
@@ -143,7 +143,7 @@
                     </table>
                     <?php  }?>
                     <div class="link-right">
-                    <a href="MBookReserv.php" class="btn btn-primary">Create</a>
+                    <a href="MRoomReserv.php" class="btn btn-primary">Create</a>
                     </div>
               </div>
             </div>

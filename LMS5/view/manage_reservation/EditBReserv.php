@@ -8,7 +8,7 @@
   <title>Manage Book Reservation</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
 
@@ -41,7 +41,7 @@
 		padding: 10px;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 #00aea6f0, 0 6px 20px 0 #00aea6f0;}
-		}
+		
 	</style>
 </head>
 
