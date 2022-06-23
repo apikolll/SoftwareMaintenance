@@ -93,7 +93,7 @@
 
                     <!---changes are made here --->
 
-                    <div class="afiq">
+                    <div class="dd">
                      <form action="SearchRoom.php" method="post">
                      Search <input id="rad" type="text" name="searchroom">
                       <input type="submit">
