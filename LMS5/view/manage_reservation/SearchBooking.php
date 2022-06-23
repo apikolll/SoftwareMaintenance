@@ -93,7 +93,7 @@
 
                     <!-- changes are made here -->
                     
-                   <div class="afiq">
+                   <div class="dd">
                      <form action="SearchBooking.php" method="post">
                      Search <input id="rad" type="text" name="searchbooking">
                       <input type="submit">
