@@ -6,9 +6,7 @@
 		die(" Connection Error "); 
 	}
 
-	if(isset($_POST['up']))
-	{
-		$id = $_POST['id'];
+	$id = $_POST['id'];
 		$borrower_name=$_POST['borrower_name'];
 		$book_title = $_POST['book_title'];
 		$isbn = $_POST['isbn'];
@@ -29,14 +27,6 @@
 		{
 			die("Error deleting data !  ".$conn->error);
 		}
-	}
-	else
-	{
-		header("location:viewDetails.php");
-		die("Error deleting data !  ".$conn->error);
-	}
-
-
 
 
 
