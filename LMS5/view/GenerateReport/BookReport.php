@@ -143,9 +143,6 @@
 
 
       <! middle/centre section title>
-      <section>
-        
-      </section>
       <section id="hero">
       <div class="hero-container">
 
@@ -185,7 +182,7 @@
 
     <a class="arrow arrow-right" title="Go To Fine Records" href="../GenerateReport/FinedRecordReport.php"></a>
 	  <a class="arrow arrow-left" title="Go To Room Records" href="../GenerateReport/RoomRentedReport.php"></a>
-    
+
     </section>
 
     <!-- ======= Footer ======= -->
