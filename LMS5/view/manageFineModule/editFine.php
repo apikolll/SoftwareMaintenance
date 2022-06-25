@@ -155,8 +155,7 @@
 						</table><br>
 						
 						<input type="button" value="Back " onclick="location.href='./manageFineModule.php'">
-						<input type="submit" value="Update" name="up" onclick="calculateFine()">
-						<input type="reset" value="Reset">
+						<input type="submit" value="Update" onclick="calculateFine()">
 					</center>
 				</form><?php }?>
               </div>
@@ -208,14 +207,8 @@
   <script>
   function calculateFine()
   {
-	if (confirm("Click Ok to proceed "))
-	{
-		alert("Fine details are successfully updated to the system");
-	}
-	else
-	{
-		alert("Cancelled");
-	}
+	alert("Fine details are successfully updated to the system");
+	
   }
   </script>
 
