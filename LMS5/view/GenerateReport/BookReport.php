@@ -75,6 +75,31 @@
       		background: #d3d3d3;
       		color: black;
       	}
+
+        .arrow 
+		    {
+			    position: absolute;
+		    	padding: 3rem; /* Arrow size */
+			    box-shadow: 1px -1px 0 1px plum inset;
+			    -webkit-box-shadow: 2px -2px plum inset;
+			    border: solid transparent;
+			    border-width: 0 0 2rem 2rem;
+			    transition: 0.2s;
+		    }
+		
+		    .arrow:hover 
+	    	{
+			    box-shadow: 2px -2px 0 2px orchid inset;
+			    -webkit-box-shadow: 4px -4px orchid inset;
+	    	}
+		
+		    .arrow { top:50%;margin:-67px 0 0 -650px;left:35% }
+		    a:nth-child(2) { left:125% }
+    
+		    .arrow-up    { transform:rotate(135deg) }
+		    .arrow-right { transform:rotate(225deg) }
+		    .arrow-down  { transform:rotate(-45deg) }
+		    .arrow-left  { transform:rotate(45deg) }
     </style>
 
   </head>
@@ -118,6 +143,9 @@
 
 
       <! middle/centre section title>
+      <section>
+        
+      </section>
       <section id="hero">
       <div class="hero-container">
 
@@ -154,6 +182,10 @@
           </div>
 
       </div><! middle settle tapi tak masuk css dlm list lagi >
+
+    <a class="arrow arrow-right" title="Go To Fine Records" href="../GenerateReport/FinedRecordReport.php"></a>
+	  <a class="arrow arrow-left" title="Go To Room Records" href="../GenerateReport/RoomRentedReport.php"></a>
+    
     </section>
 
     <!-- ======= Footer ======= -->
