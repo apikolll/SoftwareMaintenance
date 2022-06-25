@@ -93,10 +93,12 @@
 
                     <!-- changes are made here -->
 
-                    <form action="search.php" method="post">
-                     Search <input type="text" name="search"><br>
-                      <input type ="submit">
+                    <div class="dd">
+                     <form action="SearchBooking.php" method="post">
+                     Search <input id="rad" type="text" name="searchbooking">
+                      <input type="submit">
                     </form>
+                    </div>
                     
 
                     <?php if (isset($_GET['success'])) { ?>

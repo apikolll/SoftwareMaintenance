@@ -91,6 +91,15 @@
                     <div class="box">
                     <h9 style="color: white;" class="display-4 text-center">View List of Room Reservation</h9>
 
+                    <!---changes are made here --->
+
+                    <div class="dd">
+                     <form action="SearchRoom.php" method="post">
+                     Search <input id="rad" type="text" name="searchroom">
+                      <input type="submit">
+                    </form>
+                    </div>
+                    
                     <?php if (isset($_GET['success'])) { ?>
                     <div class="alert alert-success" role="alert">
                         <?php echo $_GET['success']; ?>

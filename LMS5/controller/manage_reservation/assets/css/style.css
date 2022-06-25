@@ -931,7 +931,7 @@ input[type=button]:hover
 input[type=submit] 
 {
   background-color: #ffd600;
-  border: none;
+  border: 2px;
   color: black;
   padding: 20px;
   text-align: center;
@@ -946,7 +946,7 @@ input[type=submit]
 input[type=submit]:hover 
 {
   background-color: black;
-  color: #ffd600;
+  color: #ffffff;
 }
 
 input[type=reset] 
@@ -1030,4 +1030,9 @@ table, tr, th, td
 {
   display: flex;
   justify-content: flex-end;
+}
+
+.afiq
+{
+  
 }

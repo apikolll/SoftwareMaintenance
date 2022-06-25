@@ -3,10 +3,7 @@ $sname = "localhost";
 $uname = "root";
 $password = "";
 
-//test1
-//this is a test from admin1
-//this is a test from admin2
-//okay
+//hello
 
 $db_name = "lms_db";
 

@@ -1,4 +1,4 @@
-<?php include "controller/Search.php" ?>
+<?php include "controller/SearchBooking.php" ?>
 <html lang="en">
 
 <head>
@@ -92,11 +92,13 @@
                     <h9 style="color:white;" class="display-4 text-center">View List of Book Reservation</h9>
 
                     <!-- changes are made here -->
-
-                    <form action="search.php" method="post">
-                     Search <input type="text" name="search"><br>
-                      <input type ="submit">
+                    
+                   <div class="dd">
+                     <form action="SearchBooking.php" method="post">
+                     Search <input id="rad" type="text" name="searchbooking">
+                      <input type="submit">
                     </form>
+                    </div>
                     
 
                     <?php if (isset($_GET['success'])) { ?>
